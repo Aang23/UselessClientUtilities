@@ -34,8 +34,10 @@ public class UselessClientUtilities {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         EventBus eventbus = MinecraftForge.EVENT_BUS;
-        FreeCam.initFreecam(eventbus);
-        SkinSwitcher.initSkinSwitcher(eventbus);
+        if (UCUSettings.freeCamEnabled)
+            FreeCam.initFreecam(eventbus);
+        if (UCUSettings.skinSwitcherEnabled)
+            SkinSwitcher.initSkinSwitcher(eventbus);
     }
 
     @Mod.EventHandler
