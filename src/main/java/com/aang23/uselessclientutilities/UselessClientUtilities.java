@@ -17,7 +17,6 @@ public class UselessClientUtilities {
     public static final String modId = "uselessclientutilities";
     public static final String name = "UselessClientUtilities";
     public static final String version = "1.0";
-    public static int timeout = 0;
     @Mod.Instance(modId)
     public static UselessClientUtilities instance;
 
